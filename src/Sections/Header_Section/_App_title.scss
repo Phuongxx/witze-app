@@ -1,0 +1,8 @@
+@use "../../Main_styles/variables" as *;
+
+.joke-app__title {
+  font-size: 3rem;
+  font-family: $font-ui;
+  color: green;
+  margin: 10px;
+}

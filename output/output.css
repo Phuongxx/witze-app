@@ -1,0 +1,141 @@
+.current-joke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(83, 83, 83);
+  margin: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+.current-joke__text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 30px 15px 30px 15px;
+  font-family: sans-serif;
+}
+.current-joke__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+  width: 100%;
+}
+.current-joke__generate, .current-joke__save {
+  background-color: rgb(0, 180, 0);
+  border: none;
+  width: 70%;
+  padding: 20px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: ease-in-out 0.2s;
+}
+.current-joke__generate:hover {
+  background-color: #008100;
+  cursor: pointer;
+}
+.current-joke__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: solid 2px rgb(0, 180, 0);
+  transition: ease-in-out 0.2s;
+  color: rgb(0, 180, 0);
+}
+.current-joke__save:hover {
+  background-color: rgb(0, 180, 0);
+  cursor: pointer;
+  color: black;
+}
+.current-joke .icon {
+  height: 25px;
+}
+
+@media (min-width: 700px) {
+  .current-joke__buttons {
+    flex-direction: row;
+    max-width: 80%;
+  }
+  .current-joke__buttons .current-joke__generate,
+  .current-joke__buttons .current-joke__save {
+    height: 100%;
+  }
+}
+.joke-app__title {
+  font-size: 3rem;
+  font-family: "FunnyKid";
+  color: green;
+  margin: 10px;
+}
+
+.saved-jokes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+.saved-jokes__heading {
+  font-family: sans-serif;
+  margin: 20px 0;
+  font-size: 2rem;
+  font-family: "FunnyKid";
+  color: white;
+}
+.saved-jokes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.saved-joke {
+  display: flex;
+  align-items: center;
+  background-color: rgb(83, 83, 83);
+}
+.saved-joke__text {
+  margin: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+.saved-joke__delete-button {
+  background-color: rgb(250, 69, 69);
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: ease-in-out 0.3s;
+}
+.saved-joke__delete-button:hover {
+  background-color: rgb(248.664921466, 19.335078534, 19.335078534);
+  cursor: pointer;
+}
+.saved-joke__delete-icon {
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(61, 61, 61);
+}
+
+.joke-app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+@font-face {
+  font-family: "FunnyKid";
+  src: url(../fonts/FunnyKid.ttf);
+}
+
+/*# sourceMappingURL=output.css.map */

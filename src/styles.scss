@@ -1,0 +1,7 @@
+@use "./Sections/Body_Section/create_joke";
+@use "./Sections/Header_Section/App_title";
+@use "./Sections/Save_Section/save_joke_container";
+@use "./Main_styles/main";
+
+@use "./Main_styles/variables" as *;
+@use "./Main_styles/mixin" as *;

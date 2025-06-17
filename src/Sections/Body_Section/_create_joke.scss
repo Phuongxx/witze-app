@@ -1,0 +1,77 @@
+@use "../../Main_styles/variables" as *;
+
+.current-joke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $joke-box-background;
+  margin: 10px;
+  width: 100%;
+  max-width: 700px;
+
+  &__text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 15px 30px 15px;
+    font-family: sans-serif;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__generate,
+  &__save {
+    background-color: $save-button;
+    border: none;
+    width: 70%;
+    padding: 20px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: ease-in-out 0.2s;
+  }
+
+  &__generate:hover {
+    background-color: darken($save-button, 10%);
+    cursor: pointer;
+  }
+
+  &__save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: solid 2px $save-button;
+    transition: ease-in-out 0.2s;
+    color: $save-button;
+  }
+
+  &__save:hover {
+    background-color: $save-button;
+    cursor: pointer;
+    color: black;
+  }
+
+  .icon {
+    height: 25px;
+  }
+}
+
+@media (min-width: 700px) {
+  .current-joke__buttons {
+    flex-direction: row;
+    max-width: 80%;
+
+    .current-joke__generate,
+    .current-joke__save {
+      height: 100%;
+    }
+  }
+}
