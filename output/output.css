@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(83, 83, 83);
-  margin: 10px;
-  width: 100%;
+  margin: 20px;
   max-width: 700px;
 }
 .current-joke__text {
@@ -76,7 +75,6 @@
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  width: 100%;
   max-width: 700px;
 }
 .saved-jokes__heading {
