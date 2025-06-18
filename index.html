@@ -11,13 +11,14 @@
     <section class="joke-app">
       <h1 class="joke-app__title">Witze App</h1>
       <div class="current-joke">
-        <p class="current-joke__text">
-          das hier wird ein random generierter text sein, damit ich schauen
-          kann, wie groß das styling für meine jokebox sein musst
+        <p class="current-joke__text" id="displayJoke">
+          <em>klicke auf den button um einen joke zu generieren</em>
         </p>
         <div class="current-joke__buttons">
-          <button class="current-joke__generate">Neuen Witz laden</button>
-          <button class="current-joke__save">
+          <button class="current-joke__generate" id="generateJoke">
+            Neuen Witz laden
+          </button>
+          <button class="current-joke__save" id="saveJoke">
             <span>Witz speichern</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -86,6 +87,6 @@
         </div>
       </div>
     </section>
-    <script type="module" src="src/Main_styles/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
