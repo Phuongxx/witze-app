@@ -30,15 +30,18 @@
   &__save {
     background-color: $save-button;
     border: none;
-    width: 70%;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px 0;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
     transition: ease-in-out 0.2s;
+    min-height: 60px;
   }
 
   &__generate:hover {
-    background-color: darken($save-button, 10%);
+    background-color: $save-button;
     cursor: pointer;
   }
 
@@ -51,6 +54,10 @@
     border: solid 2px $save-button;
     transition: ease-in-out 0.2s;
     color: $save-button;
+
+    &--disabled {
+      display: none;
+    }
   }
 
   &__save:hover {

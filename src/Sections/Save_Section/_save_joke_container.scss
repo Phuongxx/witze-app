@@ -16,8 +16,12 @@
   }
   &__list {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
+    font-size: 1.5rem;
+    color: $font-placeholder;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 .saved-joke {
@@ -40,11 +44,15 @@
   }
 
   &__delete-button:hover {
-    background-color: darken($delete-button, 10%);
+    background-color: $delete-button;
     cursor: pointer;
   }
 
   &__delete-icon {
     height: 50px;
   }
+}
+
+.disable-entry-text {
+  display: none;
 }
