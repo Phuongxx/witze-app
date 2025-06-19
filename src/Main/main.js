@@ -6,7 +6,6 @@ import {
 } from "../Sections/Save_Section/storing";
 
 const fetchJokeBtn = document.querySelector("#generateJoke");
-
 const saveJokeBtn = document.querySelector("#saveJoke");
 
 fetchJokeBtn.addEventListener("click", async () => {
